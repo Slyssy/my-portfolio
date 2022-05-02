@@ -1,0 +1,675 @@
+:root {
+  --red: #e83656ff;
+  --titles: #4d4d4dff;
+  --turquoise: #62cfd3ff;
+  --gainsboro: #dbd9d9ff;
+  --khaki: #c8be68ff;
+  --goldenrod: #daa520;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('./images/backgroundImg.jpg');
+  background-size: 100%;
+  background-position: center;
+}
+body {
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Kaushan Script', cursive; */
+  font-family: 'Roboto Slab', serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #151111a3;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  /* padding: 10%; */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+footer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #151111a3;
+  color: var(--gainsboro);
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#profile-pic {
+  width: 90%;
+  border-radius: 50%;
+  margin: 15% 10%;
+}
+
+.h1-main {
+  font-size: 7rem;
+  color: var(--goldenrod);
+}
+
+.h2-main {
+  font-size: 4rem;
+  color: var(--goldenrod);
+}
+
+.icon {
+  width: 50px;
+  list-style-type: none;
+}
+
+.icon-img {
+  width: 50%;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.main-links {
+  height: 12rem;
+  width: 80%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+
+.main-links a:hover {
+  font-size: 120%;
+  transition: all 0.3s ease;
+}
+.main-paragraph {
+  color: var(--gainsboro);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  width: 90%;
+  display: block;
+  margin-top: 10px;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.mySkill-link {
+  background-color: var(--goldenrod);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.myWork-link {
+  background-color: var(--turquoise);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.name {
+  color: var(--gainsboro);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.navbar {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--gainsboro);
+  font-size: 1.3rem;
+  padding: 3.2rem 3rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--goldenrod);
+}
+
+.page-left {
+  width: 40%;
+}
+
+.page-right {
+  width: 60%;
+}
+
+.position {
+  color: var(--gainsboro);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.resume-link {
+  background-color: var(--red);
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--titles);
+  border-radius: 10px;
+}
+
+.underConstruction {
+  width: 100%;
+}
+
+/* %Projects HTML styling */
+
+section {
+  width: 90%;
+  margin: 3rem auto;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.carousel-image {
+  width: 40%;
+  box-shadow: 1px 1px 10px 5px rgba(66, 66, 66, 0.745);
+}
+
+.project-name {
+  font-family: 'Alegreya Sans SC';
+  color: var(--gainsboro);
+  font-size: 2rem;
+  line-height: 3;
+}
+
+.project-name a:link,
+.project-name a:visited {
+  color: var(--gainsboro);
+}
+
+.projects-navbar {
+  font-family: 'Alegreya Sans SC';
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-navlinks {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--gainsboro);
+  list-style-type: none;
+  gap: 2em;
+}
+
+.project-link {
+  flex-basis: 100px;
+}
+.projects-navlinks li a:link,
+.projects-navlinks li a:visited {
+  color: var(--gainsboro);
+  text-decoration: none;
+}
+
+.projects-navlinks li a:hover {
+  font-size: 1.8rem;
+  color: var(--turquoise);
+}
+
+.projects-title {
+  color: var(--goldenrod);
+  width: 30%;
+}
+
+.project-description {
+  font-family: 'Alegreya Sans';
+  color: var(--gainsboro);
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.technologies {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  color: var(--goldenrod);
+}
+
+.technologies li {
+  flex-basis: 33.3%;
+}
+
+.thumbnails {
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.thumbnails li {
+  width: 15%;
+  box-shadow: 1px 1px 10px 5px rgba(65, 64, 64, 0.745);
+}
+
+.thumbnails li img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* % Contact Me Styling */
+form {
+  width: 80%;
+  height: 80%;
+  margin: 3rem auto;
+}
+
+form {
+  background-color: rgba(49, 49, 49, 0.6);
+  border-radius: 10px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  max-width: 90%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type='email'] {
+  background-color: var(--gainsboro);
+  height: 2.5rem;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+input[type='email']:focus {
+  outline-color: var(--goldenrod);
+}
+
+input[type='text'] {
+  background-color: var(--gainsboro);
+  height: 2.5rem;
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+input[type='text']:focus {
+  outline-color: var(--goldenrod);
+}
+textarea {
+  font-family: sans-serif;
+  font-size: 1rem;
+  width: 80%;
+  height: 50%;
+  background-color: var(--gainsboro);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+textarea:focus {
+  outline-color: var(--goldenrod);
+}
+
+#contact-submit {
+  background-color: var(--red);
+  color: var(--gainsboro);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+#contact-submit:hover {
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: font-size 0.2s ease;
+}
+
+#contact-submit:active {
+  font-size: 1.5rem;
+  transition: font-size 0.1s ease;
+}
+
+.container {
+  height: 80vh;
+}
+
+/* % Thank You Page */
+.thanks {
+  color: var(--goldenrod);
+  font-size: 46px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* !Breakpoints for Tablets and Small Laptops */
+@media only screen and (max-width: 960px) {
+  .mySkill-link {
+    height: 90px;
+    width: 90px;
+  }
+
+  .myWork-link {
+    height: 90px;
+    width: 90px;
+  }
+
+  .resume-link {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+/* !Breakpoints for Mobile Phone Devices */
+@media (max-width: 700px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    width: 80%;
+  }
+
+  .footer-column-bottom {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-column-middle {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-column-top {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .h1-main {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .h2-main {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .main-links {
+    height: 12rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .main-paragraph {
+    width: 100%;
+    margin: auto;
+  }
+
+  .mySkill-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .myWork-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .page-left {
+    width: 80%;
+  }
+
+  .page-right {
+    width: 80%;
+  }
+
+  .position {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .resume-link {
+    height: 80px;
+    width: 80px;
+    font-size: 1rem;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  /* Project HTML Styling */
+  #container {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #e-birds {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #flood-map {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #job-costing {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .carrousel-image {
+    width: 80%;
+    order: 1;
+  }
+
+  .project-description {
+    order: 2;
+  }
+  .project-name {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .projects-navbar {
+    justify-content: space-around;
+  }
+  .projects-navlinks {
+    font-size: 1rem;
+  }
+  .project-paragraph {
+    width: 80%;
+    margin: auto;
+  }
+
+  .projects-title {
+    display: none;
+  }
+  .technologies {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 100%;
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .thanks {
+    font-size: 24px;
+  }
+}

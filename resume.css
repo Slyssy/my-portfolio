@@ -1,0 +1,385 @@
+:root {
+  --red: #e83656ff;
+  --titles: #4d4d4dff;
+  --turquoise: #62cfd3ff;
+  --gainsboro: #dbd9d9ff;
+  --goldenrod: #daa520;
+  --khaki: #c8be68ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #151111;
+}
+body {
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Kaushan Script', cursive; */
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--gainsboro);
+  max-width: 1300px;
+  margin: auto;
+}
+header {
+  background-color: #151111;
+}
+
+ul {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+li {
+  padding: 0.25rem 0;
+  line-height: 1.4rem;
+  list-style: square;
+}
+li:hover {
+  background-color: rgba(218, 165, 32, 0.115);
+}
+.name {
+  color: var(--gainsboro);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.position {
+  color: var(--gainsboro);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  background: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--gainsboro);
+  font-size: 1.3rem;
+  padding: 3.2rem 3rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--turquoise);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--titles);
+  border-radius: 10px;
+}
+
+.resume {
+  margin: 4rem auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resume-navbar {
+  display: none;
+}
+
+.resume-navbar.sticky {
+  display: block;
+}
+.resume-links {
+  position: fixed;
+  top: 11rem;
+  left: 0;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  transition: 0.6s;
+  padding: 1rem 1rem;
+  background: #15111174;
+}
+
+.resume-navbar ul li {
+  list-style-type: none;
+}
+
+.resume-navbar ul li:hover {
+  background: none;
+}
+.resume-navbar ul li a {
+  color: white;
+}
+.resume-navbar ul li a:hover {
+  font-size: 1.5rem;
+  color: var(--turquoise);
+}
+
+.resume-navbar ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0rem 1rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.close-icon {
+  width: 24px;
+  stroke: var(--gainsboro);
+  margin-left: 80%;
+}
+
+.close-icon:hover {
+  stroke: var(--goldenrod);
+  cursor: pointer;
+}
+
+.close-icon:active {
+  width: 22px;
+}
+
+.upperCase {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 22px;
+}
+
+hr {
+  height: 6px;
+  width: 100%;
+  border-width: 0;
+  background-color: var(--titles);
+  margin-bottom: 1rem;
+}
+
+.divider-light {
+  height: 1px;
+  background-color: var(--titles);
+}
+
+.tag-line {
+  font-size: 1.8rem;
+}
+
+.contact-info {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--titles);
+  text-align: center;
+}
+
+.continued-education p {
+  margin-left: 1rem;
+}
+
+.job-position {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  margin-left: 1rem;
+  color: var(--red);
+}
+.certification {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+a,
+a:visited {
+  color: var(--titles);
+  font-weight: 500;
+}
+
+a:hover {
+  font-size: 110%;
+  color: var(--turquoise);
+}
+
+a:active {
+  font-size: 105%;
+}
+.section-headers {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 22px;
+  color: var(--titles);
+}
+.qualifications {
+  font-weight: 100;
+}
+
+.company-name {
+  font-weight: 300;
+}
+
+.education {
+  padding-bottom: 2rem;
+}
+.cert-institution {
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.standard-text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--red);
+  color: var(--gainsboro);
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.icon {
+  width: 50px;
+  list-style-type: none;
+  align-self: center;
+}
+
+.icon-img {
+  width: 50%;
+}
+@media (max-width: 700px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  .position {
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .resume-links {
+    max-width: 100%;
+    top: 4.3rem;
+    left: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  footer {
+    margin-top: 1.5rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer-column-top {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-column-middle {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-column-bottom {
+    margin-top: 1rem;
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
