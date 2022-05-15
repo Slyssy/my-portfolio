@@ -43,6 +43,31 @@ li {
 li:hover {
   background-color: rgba(218, 165, 32, 0.115);
 }
+.company-dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dates {
+  color: var(--red);
+  margin-right: 2em;
+}
+
+.head-shot {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.logo-link {
+  width: 20%;
+}
 .name {
   color: var(--gainsboro);
   font-size: 40px;
