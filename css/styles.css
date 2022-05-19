@@ -149,7 +149,7 @@ footer {
 
 .name {
   color: var(--gainsboro);
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -166,6 +166,8 @@ footer {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
 .navbar-links li {
@@ -176,7 +178,7 @@ footer {
   text-decoration: none;
   color: var(--gainsboro);
   font-size: 1.3rem;
-  padding: 3.2rem 3rem;
+  padding: 3.2rem rem;
   display: block;
   text-align: center;
   transition: all 0.3s ease;
@@ -198,7 +200,7 @@ footer {
 
 .position {
   color: var(--gainsboro);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -420,8 +422,36 @@ textarea:focus {
   transition: font-size 0.1s ease;
 }
 
+.check-box-paragraph {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--goldenrod);
+  text-align: center;
+}
+
+.check-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  color: var(--turquoise);
+}
+
 .container {
   height: 80vh;
+  width: 100vw;
+}
+
+.subscribe {
+  color: var(--goldenrod);
+  text-align: center;
+}
+
+.subscribe-inputs {
+  color: var(--turquoise);
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* % Thank You Page */
@@ -436,6 +466,9 @@ textarea:focus {
 }
 /* !Breakpoints for Tablets and Small Laptops */
 @media only screen and (max-width: 960px) {
+  .check-boxes {
+    grid-template-columns: 1fr 1fr;
+  }
   .mySkill-link {
     height: 90px;
     width: 90px;
@@ -444,6 +477,10 @@ textarea:focus {
   .myWork-link {
     height: 90px;
     width: 90px;
+  }
+
+  .navbar-links li a {
+    font-size: 1em;
   }
 
   .resume-link {
