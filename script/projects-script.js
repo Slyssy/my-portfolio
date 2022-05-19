@@ -24,15 +24,15 @@ projectLinks.addEventListener('click', function (e) {
 
 //% Thumbnail Functions
 function selectImageJobCosting(num) {
-  const thumb = `images/project-images/carousel${num}.png`;
+  const thumb = `../images/project-images/carousel${num}.png`;
   mainJobCostingImage.src = thumb;
 }
 function selectImageFlood(num) {
-  const thumb = `images/project-images/carousel${num}.png`;
+  const thumb = `../images/project-images/carousel${num}.png`;
   mainFloodImage.src = thumb;
 }
 
 function selectImageEbirds(num) {
-  const thumb = `images/project-images/carousel${num}.png`;
+  const thumb = `../images/project-images/carousel${num}.png`;
   mainEbirdsImage.src = thumb;
 }
