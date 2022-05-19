@@ -14,7 +14,7 @@
 }
 
 html {
-  background-image: url('./images/backgroundImg.jpg');
+  background-image: url('../images/backgroundImg.jpg');
   background-size: 100%;
   background-position: center;
 }

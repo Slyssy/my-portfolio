@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Stephen</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&family=Roboto+Slab:wght@600&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js" defer></script>
+    <script src="../script/script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -37,6 +37,7 @@
               </li>
               <li><a href="./resume.html">Resume</a></li>
               <li><a href="./projects.html">Projects</a></li>
+              <li><a href="./about-me.html">About Me</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
@@ -65,12 +66,75 @@
           value="https://slyssy.github.io/ACA_web101_Stephen_Lyssy/My_Portfolio/thanks.html"
         />
         <input type="hidden" name="_subject" value="New submission!" />
+        <p class="check-box-paragraph">How did you hear about me?</p>
+        <div class="check-boxes">
+          <div class="classmate-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="how-we-met"
+              value="classmate"
+            />
+            <label for="how-we-met">Classmate</label>
+          </div>
+          <div class="resume-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="how-we-met"
+              value="resume"
+            />
+            <label for="how-we-met">Resume Submission</label>
+          </div>
+          <div class="linkedIn-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="how-we-met"
+              value="linkedIn"
+            />
+            <label for="how-we-met">LinkedIn</label>
+          </div>
+          <div class="coding-academy-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="how-we-met"
+              value="coding-academy"
+            />
+            <label for="how-we-met">Coding Academy</label>
+          </div>
+        </div>
         <textarea
           name="contact-message"
           id="contact-message"
           placeholder="Enter Message"
           required
         ></textarea>
+        <p class="subscribe">
+          Would you like to be included in future communications?
+        </p>
+        <div class="subscribe-inputs">
+          <div class="subscribe-yes">
+            <input
+              type="radio"
+              id="yes"
+              name="future-communications"
+              value="Yes"
+              checked="checked"
+            />
+            <label for="yes">Yes</label>
+          </div>
+          <div class="subscribe-no">
+            <input
+              type="radio"
+              id="no"
+              name="future-communications"
+              value="No"
+            />
+            <label for="no">No</label>
+          </div>
+        </div>
         <input type="submit" name="contact-submit" id="contact-submit" />
       </form>
     </div>
