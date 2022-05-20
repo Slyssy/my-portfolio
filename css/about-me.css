@@ -35,6 +35,7 @@ section {
   grid-template-columns: repeat(12, 1fr);
   border: 1px solid var(--gainsboro);
   border-radius: 20px;
+  gap: 2em;
 }
 #about-me-container {
   width: 90%;
@@ -48,6 +49,35 @@ section {
   /* display: flex;
   flex-direction: column;
   justify-content: space-between; */
+}
+
+.hobbies-description {
+  grid-column: 1/13;
+}
+
+.hobbies-image {
+  grid-column: 4/10;
+  grid-row: span 2;
+  height: 500px;
+  background-color: lightpink;
+  border-radius: 20px;
+}
+
+.hobbies-thumbnails {
+  grid-column: 4/10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hobbies-thumbnails li {
+  width: 15%;
+  box-shadow: 1px 1px 10px 5px rgba(65, 64, 64, 0.745);
+}
+
+.hobbies-thumbnails li img {
+  width: 100%;
+  cursor: pointer;
 }
 
 .section-description {
@@ -82,6 +112,7 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+
 .section-thumbnails li {
   width: 15%;
   box-shadow: 1px 1px 10px 5px rgba(65, 64, 64, 0.745);
