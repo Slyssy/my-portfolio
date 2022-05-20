@@ -1,3 +1,6 @@
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.navbar-links');
+
 // % Storing Contact Me Results on a page.
 const placeForResults = document.getElementById('results');
 
@@ -8,4 +11,21 @@ new URLSearchParams(window.location.search).forEach((value, name) => {
   );
   // placeForResults.append(`${name} : ${value}`);
   // placeForResults.append(document.createElement('br'));
+});
+
+//% Navbar toggle button event listener
+toggleButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  navbarLinks.classList.toggle('active');
+});
+
+resumeLinks.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('resume-link')) {
+    const destinationID = e.target.getAttribute('href');
+    document
+      .querySelector(destinationID)
+      .scrollIntoView({ behavior: 'smooth' });
+  }
 });
