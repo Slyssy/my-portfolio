@@ -19,8 +19,6 @@ html {
   background-position: center;
 }
 body {
-  /* font-family: 'Inter', sans-serif;
-  font-family: 'Kaushan Script', cursive; */
   font-family: 'Roboto Slab', serif;
 
   display: flex;
@@ -66,6 +64,15 @@ footer {
   margin: 15% 10%;
 }
 
+.go-back {
+  font-family: sans-serif;
+  color: var(--gainsboro);
+  background-color: var(--red);
+  font-size: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+  margin-top: 5rem;
+}
 .h1-main {
   font-size: 7rem;
   color: var(--goldenrod);
@@ -348,7 +355,7 @@ section {
 /* % Contact Me Styling */
 form {
   width: 80%;
-  height: 80%;
+  height: 90%;
   margin: 3rem auto;
 }
 
@@ -389,6 +396,7 @@ input[type='text'] {
 input[type='text']:focus {
   outline-color: var(--goldenrod);
 }
+
 textarea {
   font-family: sans-serif;
   font-size: 1rem;
@@ -401,6 +409,10 @@ textarea {
 
 textarea:focus {
   outline-color: var(--goldenrod);
+}
+
+#contact-message {
+  height: 30%;
 }
 
 #contact-submit {
@@ -422,6 +434,28 @@ textarea:focus {
   transition: font-size 0.1s ease;
 }
 
+#date-picker {
+  width: 50%;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-family: sans-serif;
+  color: var(--titles);
+}
+
+.birthday {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+  justify-items: center;
+}
+
+.birthday-label {
+  color: var(--goldenrod);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
 .check-box-paragraph {
   font-size: 18px;
   font-weight: 600;
@@ -506,8 +540,35 @@ textarea:focus {
     flex-direction: column;
   }
 
+  #contact-message {
+    height: 20%;
+  }
+  #contact-submit {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #date-picker {
+    width: 70%;
+    font-size: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+  }
+
   #profile-pic {
     width: 80%;
+  }
+
+  .birthday-label {
+    font-size: 14px;
+  }
+
+  .check-boxes {
+    font-size: 10px;
+  }
+
+  .check-box-paragraph {
+    font-size: 14px;
   }
 
   .footer-column-bottom {
@@ -626,6 +687,14 @@ textarea:focus {
     height: 80px;
     width: 80px;
     font-size: 1rem;
+  }
+
+  .subscribe {
+    font-size: 12px;
+  }
+
+  .subscribe-inputs {
+    font-size: 10px;
   }
 
   .toggle-button {

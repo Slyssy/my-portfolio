@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Stephen</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&family=Roboto+Slab:wght@600&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/contact-script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h1 class="name">Stephen Lyssy</h1>
+            <h3 class="position">Project Manager/Web Developer</h3>
+          </div>
+          <a href="" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li>
+                <a href="https://stephenlyssy.com">Home</a>
+              </li>
+              <li><a href="./public/resume.html">Resume</a></li>
+              <li><a href="./pulic/projects.html">Projects</a></li>
+              <li><a href="./public/about-me.html">About Me</a></li>
+              <li><a href="./public/contact2.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <form action="./results.html" method="get" enctype="multipart/form-data">
+        <input
+          type="text"
+          name="Full-Name"
+          placeholder="Enter your Full Name"
+          required
+        />
+        <input
+          type="email"
+          name="E-Mail"
+          placeholder="Enter your E-mail"
+          id="email"
+          required
+        />
+        <p class="check-box-paragraph">How did you hear about me?</p>
+        <div class="check-boxes">
+          <div class="classmate-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="How do you know me?"
+              value="classmate"
+            />
+            <label for="how-we-met">Classmate</label>
+          </div>
+          <div class="resume-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="How do you know me?"
+              value="resume"
+            />
+            <label for="how-we-met">Resume Submission</label>
+          </div>
+          <div class="linkedIn-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="How do you know me?"
+              value="linkedIn"
+            />
+            <label for="how-we-met">LinkedIn</label>
+          </div>
+          <div class="coding-academy-checkbox">
+            <input
+              type="checkbox"
+              id="how-we-met"
+              name="How do you know me?"
+              value="coding-academy"
+            />
+            <label for="how-we-met">Coding Academy</label>
+          </div>
+        </div>
+        <textarea
+          name="Contact Message"
+          id="contact-message"
+          placeholder="Enter Message"
+          maxlength="500"
+          minlength="20"
+          required
+        ></textarea>
+        <p class="subscribe">
+          Would you like to be included in future communications?
+        </p>
+        <div class="subscribe-inputs">
+          <div class="subscribe-yes">
+            <input
+              type="radio"
+              id="yes"
+              name="Future Communications"
+              value="Yes"
+              checked="checked"
+            />
+            <label for="yes">Yes</label>
+          </div>
+          <div class="subscribe-no">
+            <input
+              type="radio"
+              id="no"
+              name="Future Communications?"
+              value="No"
+            />
+            <label for="no">No</label>
+          </div>
+        </div>
+        <div class="birthday">
+          <label for="birthday" class="birthday-label">
+            Enter your birth date to receive a Birthday wish.</label
+          >
+          <input type="date" name="Birthday" id="date-picker" />
+        </div>
+
+        <input type="submit" id="contact-submit" />
+      </form>
+    </div>
+  </body>
+</html>
