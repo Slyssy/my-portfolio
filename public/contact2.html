@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kaushan+Script&family=Roboto+Slab:wght@600&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <script src="../script/script.js" defer></script>
+    <script src="../script/contact-script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -40,36 +40,27 @@
           </div>
         </nav>
       </header>
-      <form
-        action="https://formsubmit.co/stephen.lyssy@gmail.com"
-        method="POST"
-      >
+      <form action="./results.html" method="get" enctype="multipart/form-data">
         <input
           type="text"
-          name="full-name"
+          name="Full-Name"
           placeholder="Enter your Full Name"
           required
         />
         <input
           type="email"
-          name="email"
-          placeholder="Enter your Email"
+          name="E-Mail"
+          placeholder="Enter your E-mail"
           id="email"
           required
         />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://slyssy.github.io/ACA_web101_Stephen_Lyssy/My_Portfolio/thanks.html"
-        />
-        <input type="hidden" name="_subject" value="New submission!" />
         <p class="check-box-paragraph">How did you hear about me?</p>
         <div class="check-boxes">
           <div class="classmate-checkbox">
             <input
               type="checkbox"
               id="how-we-met"
-              name="how-we-met"
+              name="How do you know me?"
               value="classmate"
             />
             <label for="how-we-met">Classmate</label>
@@ -78,7 +69,7 @@
             <input
               type="checkbox"
               id="how-we-met"
-              name="how-we-met"
+              name="How do you know me?"
               value="resume"
             />
             <label for="how-we-met">Resume Submission</label>
@@ -87,7 +78,7 @@
             <input
               type="checkbox"
               id="how-we-met"
-              name="how-we-met"
+              name="How do you know me?"
               value="linkedIn"
             />
             <label for="how-we-met">LinkedIn</label>
@@ -96,16 +87,18 @@
             <input
               type="checkbox"
               id="how-we-met"
-              name="how-we-met"
+              name="How do you know me?"
               value="coding-academy"
             />
             <label for="how-we-met">Coding Academy</label>
           </div>
         </div>
         <textarea
-          name="contact-message"
+          name="Contact Message"
           id="contact-message"
           placeholder="Enter Message"
+          maxlength="500"
+          minlength="20"
           required
         ></textarea>
         <p class="subscribe">
@@ -116,7 +109,7 @@
             <input
               type="radio"
               id="yes"
-              name="future-communications"
+              name="Future Communications"
               value="Yes"
               checked="checked"
             />
@@ -126,7 +119,7 @@
             <input
               type="radio"
               id="no"
-              name="future-communications"
+              name="Future Communications?"
               value="No"
             />
             <label for="no">No</label>
@@ -136,10 +129,10 @@
           <label for="birthday" class="birthday-label">
             Enter your birth date to receive a Birthday wish.</label
           >
-          <input type="date" name="birthday" id="date-picker" />
+          <input type="date" name="Birthday" id="date-picker" />
         </div>
 
-        <input type="submit" name="contact-submit" id="contact-submit" />
+        <input type="submit" id="contact-submit" />
       </form>
     </div>
   </body>
