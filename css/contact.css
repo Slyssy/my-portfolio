@@ -38,8 +38,11 @@ h1 {
 #results {
   width: 80%;
   margin: 0 auto;
+  padding: 0 5%;
+  border: 1px solid var(--gainsboro);
+  border-radius: 10px;
   background: rgba (0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 
 /* #results :nth-child(1) {
@@ -47,22 +50,49 @@ h1 {
 } */
 .name-result {
   color: var(--turquoise);
+  font-size: 24px;
+  font-weight: 600;
 }
 .result-info {
-  width: 60%;
+  width: 100%;
   color: var(--gainsboro);
   font-size: 20px;
-  margin: 5% auto;
+  margin: 5% 0;
 }
 
 .go-back {
   align-self: center;
   font-size: 1.2em;
   padding: 0.5em 1em;
-  background-color: var(--red);
+  background-color: transparent;
+  border: none;
 }
 
 .go-back a {
   color: var(--gainsboro);
   text-decoration: none;
+  background-color: var(--red);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+
+.go-back a:hover {
+  background-color: var(--gainsboro);
+  color: var(--red);
+  transition: all ease 0.3s;
+}
+
+.go-back a:active {
+  padding: 0.4em 0.8em;
+  transition: all ease 0.1s;
+}
+@media (max-width: 700px) {
+  .name-result {
+    font-size: 16px;
+  }
+
+  .result-info {
+    font-size: 14px;
+  }
 }
