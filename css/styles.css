@@ -389,6 +389,7 @@ input[type='text'] {
 input[type='text']:focus {
   outline-color: var(--goldenrod);
 }
+
 textarea {
   font-family: sans-serif;
   font-size: 1rem;
@@ -422,6 +423,26 @@ textarea:focus {
   transition: font-size 0.1s ease;
 }
 
+#date-picker {
+  width: 50%;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: var(--titles);
+}
+.birthday {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+  justify-items: center;
+}
+
+.birthday-label {
+  color: var(--goldenrod);
+  font-size: 20px;
+  font-weight: 600;
+}
 .check-box-paragraph {
   font-size: 18px;
   font-weight: 600;
