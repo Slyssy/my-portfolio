@@ -42,12 +42,9 @@ h1 {
   border: 1px solid var(--gainsboro);
   border-radius: 10px;
   background: rgba (0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
 }
 
-/* #results :nth-child(1) {
-  display: none;
-} */
 .name-result {
   color: var(--turquoise);
   font-size: 24px;
