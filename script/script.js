@@ -7,6 +7,9 @@ const profileQualificationsLink = document.querySelector(
 const resumeNavbar = document.querySelector('.resume-navbar');
 const resumeLinks = document.querySelector('.resume-links');
 const stickyClose = document.querySelector('.close-icon');
+const mainFurFamilyImage = document.querySelector('#fur-family-image');
+const mainHobbiesImage = document.querySelector('#hobbies-image');
+const mainEbirdsImage = document.querySelector('#ebirds-image');
 
 //% Navbar toggle button event listener
 toggleButton.addEventListener('click', (e) => {
@@ -34,3 +37,18 @@ window.addEventListener('scroll', () => {
 stickyClose.addEventListener('click', (e) => {
   resumeNavbar.classList.remove('sticky');
 });
+
+//% Thumbnail Functions
+function selectImageFurryFamily(num) {
+  const thumb = `../images/project-images/puppies${num}.png`;
+  mainFurFamilyImage.src = thumb;
+}
+function selectImageHobbies(num) {
+  const thumb = `../images/project-images/hobbies${num}.png`;
+  mainHobbiesImage.src = thumb;
+}
+
+function selectImageEbirds(num) {
+  const thumb = `../images/project-images/carousel${num}.png`;
+  mainEbirdsImage.src = thumb;
+}

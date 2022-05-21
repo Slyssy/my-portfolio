@@ -23,7 +23,7 @@ projectLinks.addEventListener('click', function (e) {
 });
 
 //% Thumbnail Functions
-function selectImageJobCosting(num) {
+function selectImageFurFamily(num) {
   const thumb = `../images/project-images/carousel${num}.png`;
   mainJobCostingImage.src = thumb;
 }
