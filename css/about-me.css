@@ -63,6 +63,8 @@ ul {
 
 #hobbies {
   max-width: 1200px;
+  margin: 0 auto;
+
   padding: 3em;
   grid-column: 1/13;
   display: grid;
