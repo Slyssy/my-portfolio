@@ -28,6 +28,10 @@ header {
   background-color: #151111a3;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #about-me-container {
   width: 90%;
   margin: 2% auto;
@@ -67,6 +71,35 @@ header {
   backdrop-filter: blur(10px);
 }
 
+.bouvier-links {
+  display: block;
+  color: var(--turquoise);
+}
+
+.bouvier-links:link,
+.bouvier-links:active {
+  transition: all 0.3s ease;
+  color: var(--turquoise);
+  text-decoration: none;
+}
+.bouvier-links:hover {
+  color: var(--goldenrod);
+  font-size: 1.1em;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.bouvier-links:active {
+  font-size: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.bouvier-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .fur-family-description {
   grid-column: span 6;
   display: flex;
