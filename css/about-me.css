@@ -51,6 +51,8 @@ header {
   border: 1px solid var(--gainsboro);
   border-radius: 20px;
   gap: 2em;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 #hobbies {
@@ -61,6 +63,8 @@ header {
   border: 1px solid var(--gainsboro);
   border-radius: 20px;
   gap: 2em;
+  background: rgba (0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
 }
 
 .fur-family-description {
@@ -74,8 +78,6 @@ header {
   grid-column: span 6;
   grid-row: span 2;
   height: 500px;
-  /* background-color: lightpink; */
-  /* border-radius: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +112,6 @@ header {
   grid-column: 1/6;
   grid-row: 1/3;
   height: 500px;
-  background-color: lightpink;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,6 +143,7 @@ header {
 
 .navbar {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -228,9 +230,12 @@ header {
   .fur-family-thumbnails {
     grid-column: 3/11;
   }
-
-  .hobbies-image {
+  .hobbies-description {
+    grid-column: 1/13;
+  }
+  .hobbies-image-container {
     grid-column: 2/12;
+    grid-row: 2;
   }
 
   .hobbies-thumbnails {
@@ -253,8 +258,13 @@ header {
     justify-content: space-around;
   }
 
-  .fur-family-description {
-    grid-column: 1/13;
+  #hobbies {
+    max-height: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .fur-family-image-container {
