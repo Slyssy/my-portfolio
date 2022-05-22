@@ -45,7 +45,7 @@ main {
   max-width: 80%;
   /* min-height: 60%; */
   margin: 0 auto;
-  padding: 1% 5%;
+  padding: 2em;
   border: 1px solid var(--gainsboro);
   border-radius: 10px;
   background: rgba (0, 0, 0, 0.8);
@@ -181,6 +181,7 @@ main {
   #results {
     max-width: 100%;
     gap: 1em;
+    padding: 1em;
   }
   .name-result {
     font-size: 16px;
