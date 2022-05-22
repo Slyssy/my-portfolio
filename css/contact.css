@@ -29,15 +29,21 @@ main {
   font-family: sans-serif;
 }
 
-h1 {
+h2 {
   font-size: 42px;
   color: var(--goldenrod);
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
 #results {
   max-width: 80%;
-  min-height: 60%;
+  /* min-height: 60%; */
   margin: 0 auto;
   padding: 1% 5%;
   border: 1px solid var(--gainsboro);
@@ -47,6 +53,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 2em;
 }
 
 .go-back {
@@ -75,6 +82,11 @@ h1 {
 .go-back a:active {
   padding: 0.4em 0.8em;
   transition: all ease 0.1s;
+}
+.name {
+  color: var(--gainsboro);
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .name-result {
@@ -152,7 +164,7 @@ h1 {
 
 .value-result {
   color: var(--gainsboro);
-  font-size: 18px;
+  font-size: 22px;
   word-break: break-all;
   white-space: normal;
 }
@@ -162,10 +174,14 @@ h1 {
     min-height: 100vh;
   }
 
-  h1 {
+  h2 {
     font-size: 28px;
   }
 
+  #results {
+    max-width: 100%;
+    gap: 1em;
+  }
   .name-result {
     font-size: 16px;
   }
@@ -202,6 +218,9 @@ h1 {
     font-size: 14px;
   }
 
+  .value-result {
+    font-size: 14px;
+  }
   .toggle-button {
     display: flex;
   }
