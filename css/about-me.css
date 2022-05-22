@@ -291,10 +291,17 @@ ul {
     grid-column: 3/11;
   }
 
+  .name {
+    padding-left: 16px;
+  }
+
   .navbar-links li a {
     font-size: 1em;
   }
 
+  .position {
+    padding-left: 16px;
+  }
   .section-images {
     height: 90%;
   }
