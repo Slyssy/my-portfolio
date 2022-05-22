@@ -612,6 +612,7 @@ textarea:focus {
     display: block;
     width: 100%;
   }
+
   .name {
     font-size: 26px;
     font-weight: 700;
@@ -648,7 +649,7 @@ textarea:focus {
 
   .main-links {
     height: 12rem;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -658,14 +659,14 @@ textarea:focus {
   }
 
   .mySkill-link {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     font-size: 1rem;
   }
 
   .myWork-link {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     font-size: 1rem;
   }
 
@@ -684,8 +685,8 @@ textarea:focus {
   }
 
   .resume-link {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     font-size: 1rem;
   }
 
