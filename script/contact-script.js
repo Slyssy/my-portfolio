@@ -5,12 +5,16 @@ const navbarLinks = document.querySelector('.navbar-links');
 const placeForResults = document.getElementById('results');
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
+  if (name === 'Birthday') {
+    value = `${value.slice(-5)}-${value.slice(0, 4)}`;
+  }
   placeForResults.insertAdjacentHTML(
-    'afterbegin',
-    `<p class=result-info><span class=name-result>${name}</span> :<br> <span class=value-result>${value}</span></p>`
+    'beforeend',
+    `<div class=result-info>
+    <p class=name-result>${name}:</p>
+    <p class=value-result>${value}</p>
+    </div>`
   );
-  // placeForResults.append(`${name} : ${value}`);
-  // placeForResults.append(document.createElement('br'));
 });
 
 //% Navbar toggle button event listener
