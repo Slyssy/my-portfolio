@@ -147,43 +147,60 @@
               id="hobbies-image"
             />
           </div>
-          <ul class="hobbies-thumbnails">
-            <li onclick="selectImageHobbies(0)">
-              <img
-                src="../images/project-images/hobbies0.png"
-                alt="Dashboard Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageHobbies(1)">
-              <img
-                src="../images/project-images/hobbies1.png"
-                alt="Map Image"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageHobbies(2)">
-              <img
-                src="../images/project-images/hobbies2.png"
-                alt="Image of Performance Graph"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageHobbies(3)">
-              <img
-                src="../images/project-images/hobbies3.png"
-                alt="Image of Estimate to Actual Graphs"
-                class="thumb-image"
-              />
-            </li>
-            <li onclick="selectImageHobbies(4)">
-              <img
-                src="../images/project-images/hobbies4.png"
-                alt="Image of Project Details Graph"
-                class="thumb-image"
-              />
-            </li>
-          </ul>
+          <div class="carousel">
+            <button class="carousel__button carousel__button--left">
+              <img src="../images/left-arrow.svg" alt="Left Arrow SVG" />
+            </button>
+            <div class="carousel__track-container">
+              <ul class="hobbies-thumbnails">
+                <li class="carousel__slide" onclick="selectImageHobbies(0)">
+                  <img
+                    src="../images/project-images/hobbies0.png"
+                    alt="Dashboard Image"
+                    class="thumb-image carousel__image"
+                  />
+                </li>
+                <li class="carousel__slide" onclick="selectImageHobbies(1)">
+                  <img
+                    src="../images/project-images/hobbies1.png"
+                    alt="Map Image"
+                    class="thumb-image carousel__image"
+                  />
+                </li>
+                <li class="carousel__slide" onclick="selectImageHobbies(2)">
+                  <img
+                    src="../images/project-images/hobbies2.png"
+                    alt="Image of Performance Graph"
+                    class="thumb-image carousel__image"
+                  />
+                </li>
+                <li class="carousel__slide" onclick="selectImageHobbies(3)">
+                  <img
+                    src="../images/project-images/hobbies3.png"
+                    alt="Image of Estimate to Actual Graphs"
+                    class="thumb-image carousel__image"
+                  />
+                </li>
+                <li class="carousel__slide" onclick="selectImageHobbies(4)">
+                  <img
+                    src="../images/project-images/hobbies4.png"
+                    alt="Image of Project Details Graph"
+                    class="thumb-image carousel__image"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">
+              <img src="../images/right-arrow.svg" alt="Right Arrow SVG" />
+            </button>
+            <div class="carousel__nav">
+              <button class="carousel__indicator current-slide"></button
+              ><button class="carousel__indicator"></button
+              ><button class="carousel__indicator"></button
+              ><button class="carousel__indicator"></button
+              ><button class="carousel__indicator"></button>
+            </div>
+          </div>
         </section>
       </main>
     </div>
