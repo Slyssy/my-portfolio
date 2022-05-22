@@ -19,7 +19,7 @@ html {
   background-position: center;
 }
 
-body {
+main {
   width: 90%;
   height: 80vh;
   margin: 0 auto;
@@ -37,12 +37,16 @@ h1 {
 
 #results {
   max-width: 80%;
+  min-height: 60%;
   margin: 0 auto;
   padding: 1% 5%;
   border: 1px solid var(--gainsboro);
   border-radius: 10px;
   background: rgba (0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .go-back {
@@ -78,10 +82,72 @@ h1 {
   font-size: 24px;
   font-weight: 600;
 }
+
+.navbar {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--gainsboro);
+  font-size: 1.3rem;
+  padding: 3.2rem rem;
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--goldenrod);
+}
+
 .result-info {
   width: 100%;
   font-size: 20px;
-  margin: 5% 0;
+}
+
+.position {
+  color: var(--gainsboro);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--titles);
+  border-radius: 10px;
 }
 
 .value-result {
@@ -95,11 +161,48 @@ h1 {
   body {
     min-height: 100vh;
   }
+
+  h1 {
+    font-size: 28px;
+  }
+
   .name-result {
     font-size: 16px;
   }
 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
   .result-info {
     font-size: 14px;
+  }
+
+  .toggle-button {
+    display: flex;
   }
 }
