@@ -18,14 +18,3 @@ toggleButton.addEventListener('click', (e) => {
   e.preventDefault();
   navbarLinks.classList.toggle('active');
 });
-
-resumeLinks.addEventListener('click', function (e) {
-  e.preventDefault();
-
-  if (e.target.classList.contains('resume-link')) {
-    const destinationID = e.target.getAttribute('href');
-    document
-      .querySelector(destinationID)
-      .scrollIntoView({ behavior: 'smooth' });
-  }
-});
