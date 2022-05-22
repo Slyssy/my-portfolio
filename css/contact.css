@@ -29,6 +29,10 @@ main {
   font-family: sans-serif;
 }
 
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
 h2 {
   font-size: 42px;
   color: var(--goldenrod);
@@ -121,6 +125,7 @@ main {
   text-decoration: none;
   color: var(--gainsboro);
   font-size: 1.3rem;
+  font-weight: 600;
   padding: 3.2rem rem;
   display: block;
   text-align: center;
